@@ -1,0 +1,166 @@
+/* Importo la fuente (font-familiy) que traigo de google */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Voy a resetar ciertos valores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    background-color: #131415;
+    height: 100vh; /* Esto significa que ocupa el total 
+    del alto del portview (pantalla del navegador)*/
+    width: 100vw; /* Esto significa que ocupa el total
+    del ancho del portview (pantalla del navegador)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: #171414be;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #840b0b; 
+    transition: all 0.3s ease; 
+}
+
+.card:hover{
+    box-shadow: 2px 2px 30px 5px #6a0404;
+}
+
+.card-titulo{
+    color: white;
+}
+
+.card-texto{
+    color: white;
+}
+
+.kokushibo{
+    height: 300px;
+    position: absolute;
+    top: -100px;
+    left: 23%;
+    transition: all 0.3s ease;
+}
+
+.kokushibo:hover{
+    filter:drop-shadow(5px 5px 10px #4d115b)
+}
+
+/* Estoy colocando la imagen directamente desde el css */
+.card-img{
+    width: 100%; /* Esta imagen va a tener el 100% del
+    ancho del contenedor padre, es decir, de card*/
+    height: 65%; /* Esta imagen va a tener el 65% del 
+    alto del contenedor padre, es decir, de card*/
+    background-image: url(./img/bosqueOscuro.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.card-titulo{
+    padding: 0 0 0 10px;
+    font-size: 2rem;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%,
+    rgba(150,2,2,1) 35%, rgba(255,0,5,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.card-texto1{
+    font-size: 0.8rem;
+    padding: 0 0 8px 11px;
+}
+
+.card-boton{
+    align-self: flex-end;
+    border: 1px solid #840b0b;
+    background-color: none;
+    padding: 5px 12.5px;
+    border-radius: 1rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-boton:hover{
+    filter: brightness(2);
+    box-shadow: inset 10px 10px 20px 10px rgba(158,0,3,0.10)
+}   
+
+.card1{
+    width: 300px;
+    height: 450px;
+    background-color: #171414be;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #1b3157;    
+}
+
+.musashi{
+    width: 250px;
+    position: absolute;
+    top: -100px;
+    left: 15px;
+}
+
+.textoCard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.textoCard1{
+    font-size: 0.8rem;
+}
+
+.tituloCard{
+    font-size: 2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 
+    0%, rgba(128,125,125,1) 35%, rgba(0,0,0,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fondoCard{
+    height: 50%;
+    width: 100%;
+    background-image: url(./img/paisaje2.png);
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
