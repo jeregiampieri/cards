@@ -121,7 +121,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid #1b3157;    
+    border: 1px solid #1b3157;
+    transition: all 0.3s ease;    
 }
 
 .musashi{
@@ -141,6 +142,7 @@
 
 .textoCard1{
     font-size: 0.8rem;
+    padding: 0 0 8px 11px;
 }
 
 .tituloCard{
@@ -151,16 +153,37 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    margin-left: 10px;
 }
 
 .fondoCard{
-    height: 50%;
+    height: 65%;
     width: 100%;
     background-image: url(./img/paisaje2.png);
     border-radius: 1rem 1rem 0 0;
     background-size: cover;
     background-position: center;
-
 }
 
+.boton{
+    border-radius: 1rem;
+    align-self: flex-end;   
+    border: 1px solid #1b3157;
+    background: none;
+    background-color: none;
+    color: white;
+    padding: 5px 12.5px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
 
+.card1:hover{
+    background: rgb(15,56,98);
+    background: linear-gradient(90deg, rgba(15,56,98,1) 0%,
+    rgba(0,0,0,1) 35%, rgba(29,54,110,1) 100%);
+    box-shadow: 2px 2px 30px 5px #797f20;
+    transition: all 0.3s ease;
+    .boton{
+        border: 1px solid white;
+    }
+}
